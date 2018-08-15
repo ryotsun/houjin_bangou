@@ -1,0 +1,24 @@
+{
+  "name": "K - 会社情報まとめて検索アシストさん",
+  "description": "国税庁の法人番号公表サイト内、「法人番号でまとめて検索する」機能を少しだけ使いやすくします。",
+  "version": "0.3",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.houjin-bangou.nta.go.jp/matomete-kekka.html"
+      ],
+      "js": [
+        "script/script.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_title": "会社情報まとめて検索アシストさん",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "background",
+    "tabs"
+  ]
+}
